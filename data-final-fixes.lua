@@ -1,0 +1,9 @@
+data.raw.corpse["tree-01-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-02-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-03-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-04-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-05-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-06-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-07-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-08-stump"].time_before_removed = 60 * 20
+data.raw.corpse["tree-09-stump"].time_before_removed = 60 * 20
