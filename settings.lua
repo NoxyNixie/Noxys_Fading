@@ -5,18 +5,40 @@ data:extend({
 		name = "Noxys_Fading-tree-stump-fading-time",
 		setting_type = "startup",
 		minimum_value = 0,
-		default_value = 54000,
---		maximum_value = 518400000, -- 100 Days; In most games this should last through a entire playthrough.
+		default_value = 0,
 		order = "a"
 	},
 	{
 		type = "int-setting",
-		name = "Noxys_Fading-rail-remnants-fading-time",
+		name = "Noxys_Fading-biter-fading-time",
 		setting_type = "startup",
 		minimum_value = 0,
-		default_value = 162000,
---		maximum_value = 518400000, -- 100 Days; In most games this should last through a entire playthrough.
-		order = "a"
+		default_value = 0,
+		order = "b"
+	},
+	{
+		type = "int-setting",
+		name = "Noxys_Fading-building-fading-time",
+		setting_type = "startup",
+		minimum_value = 0,
+		default_value = 0,
+		order = "c"
+	},
+	{
+		type = "int-setting",
+		name = "Noxys_Fading-rail-fading-time",
+		setting_type = "startup",
+		minimum_value = 0,
+		default_value = 0,
+		order = "d"
+	},
+	{
+		type = "int-setting",
+		name = "Noxys_Fading-character-fading-time",
+		setting_type = "startup",
+		minimum_value = 0,
+		default_value = 0,
+		order = "e"
 	},
 	-- Global
 
