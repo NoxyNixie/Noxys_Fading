@@ -16,11 +16,11 @@ local biter_corspes = { -- 60 * 60 * 15
 	"-worm-",
 }
 
-if settings.startup["Noxys_Fading-tree-stump-fading-time"].value + 
+if settings.startup["Noxys_Fading-tree-stump-fading-time"].value +
 	settings.startup["Noxys_Fading-biter-fading-time"].value +
 	settings.startup["Noxys_Fading-building-fading-time"].value +
 	settings.startup["Noxys_Fading-rail-fading-time"].value > 0 then
-	for k,v in pairs(data.raw.corpse) do
+	for k,_ in pairs(data.raw.corpse) do
 		if settings.startup["Noxys_Fading-tree-stump-fading-time"].value > 0 then
 			if k:find("-stump", -6) then
 				if data.raw.corpse[k].time_before_removed then
@@ -46,7 +46,7 @@ if settings.startup["Noxys_Fading-tree-stump-fading-time"].value +
 		end
 	end
 	if settings.startup["Noxys_Fading-rail-fading-time"].value > 0 then
-		for k,v in pairs(data.raw["rail-remnants"]) do
+		for k,_ in pairs(data.raw["rail-remnants"]) do
 			if data.raw["rail-remnants"][k].time_before_removed then
 				data.raw["rail-remnants"][k].time_before_removed = settings.startup["Noxys_Fading-rail-fading-time"].value
 				data.raw["rail-remnants"][k].time_before_shading_off = math.ceil(settings.startup["Noxys_Fading-rail-fading-time"].value / 45)
@@ -55,7 +55,7 @@ if settings.startup["Noxys_Fading-tree-stump-fading-time"].value +
 	end
 end
 if settings.startup["Noxys_Fading-character-fading-time"].value > 0 then
-	for k,v in pairs(data.raw["character-corpse"]) do
+	for k,_ in pairs(data.raw["character-corpse"]) do
 		if data.raw["character-corpse"][k].time_to_live then
 			data.raw["character-corpse"][k].time_to_live = settings.startup["Noxys_Fading-character-fading-time"].value
 		end

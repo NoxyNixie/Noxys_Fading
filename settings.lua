@@ -41,7 +41,5 @@ data:extend({
 		order = "e"
 	},
 	-- Global
-
 	-- Per user
-	
 })
