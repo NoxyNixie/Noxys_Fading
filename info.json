@@ -1,14 +1,14 @@
 {
 	"name": "Noxys_QuickerStumpFade",
-	"version": "0.2.3",
-	"factorio_version": "0.18",
+	"version": "0.3.0",
+	"factorio_version": "1.0",
 	"title": "Noxys Fading",
 	"author": "Noxy",
 	"contact": "not.a.valid.email.address@example.com",
 	"homepage": "https://mods.factorio.com/user/_noxy_",
-	"description": "Configurable fade away times for various corpse entities (like biters, tree stumps, destroyed buildings).",
+	"description": "Configurable fade away times for various corpse entities (like biters, tree stumps, destroyed buildings and players).",
 	"dependencies": [
-		"base >= 0.18.0",
+		"base >= 1.0.0",
 		"? Rampant"
 	]
 }
