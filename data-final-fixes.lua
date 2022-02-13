@@ -47,3 +47,13 @@ if settings.startup["Noxys_Fading-character-fading-time"].value > 0 then
 		data.raw["character-corpse"][k].time_to_live = settings.startup["Noxys_Fading-character-fading-time"].value
 	end
 end
+local footfade = settings.startup["Noxys_Fading-character-footprint-fading-time"].value
+if footfade > 0 then
+  if footfade < 2 then
+    footfade = 2
+  end
+  data.raw["optimized-particle"]["character-footprint-particle"].life_time = footfade
+  if footfade < data.raw["optimized-particle"]["character-footprint-particle"].fade_away_duration then
+    data.raw["optimized-particle"]["character-footprint-particle"].fade_away_duration = footfade
+  end
+end

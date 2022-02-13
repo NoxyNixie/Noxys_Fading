@@ -40,6 +40,14 @@ data:extend({
 		default_value = 0,
 		order = "e"
 	},
+	{
+		type = "int-setting",
+		name = "Noxys_Fading-character-footprint-fading-time",
+		setting_type = "startup",
+		minimum_value = 0,
+		default_value = 0,
+		order = "e"
+	},
 	-- Global
 	-- Per user
 })
